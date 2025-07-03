@@ -1,13 +1,17 @@
 /* tailwind css  */
 @import "tailwindcss";
-@plugin "daisyui";
+
+@plugin "daisyui" {
+    themes: light --default, dark --prefersdark;
+    themes: light --default;
+}
 
 /* google font inter  */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-@theme {
+/* @theme {
     --font-inter: "Inter", sans-serif;
-}
+} */
 
 .banner_slide_item {
     display: flex !important;
@@ -114,6 +118,7 @@
 .client_say_description {
     position: relative;
 }
+
 .client_say_description::before {
     position: absolute;
     content: '';
